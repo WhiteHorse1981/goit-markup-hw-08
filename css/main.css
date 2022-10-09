@@ -1393,10 +1393,7 @@ img {
   .container-social-icon {
     padding-top: 12px;
   }
-  .footer-form {
-    text-align: start;
-  }
-  .logo.logo-text, .contacts {
+  .footer-form, .logo.logo-text, .contacts, .container-social-icon .social-text {
     text-align: start;
   }
 }/*# sourceMappingURL=main.css.map */
