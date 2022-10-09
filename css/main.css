@@ -1346,6 +1346,9 @@ img {
     margin-bottom: 20px;
     margin-right: 0;
   }
+  .container-footer.container {
+    padding: 60px 0px;
+  }
 }
 @media screen and (min-width: 480px) {
   .footer-form__lable-input {
@@ -1377,9 +1380,6 @@ img {
   }
   .footer-form__lable {
     display: flex;
-  }
-  .container-footer.container {
-    padding: 60px 0px;
   }
   .footer-form {
     margin-right: 0;
