@@ -1,16 +1,5 @@
-.nav-list,
-.nav-list {
-    @include font(14px, 500, 16px);
-    letter-spacing: 0.02em;
-}
-
 .page-header {
-    border-bottom: 1px solid #ECECEC;
-}
-
-.page-header-container {
-    padding-top: 0;
-    padding-bottom: 0;
+    border-bottom: 1px solid #ececec;
 }
 
 .page-header-container {
@@ -22,6 +11,12 @@
 .main-nav {
     display: flex;
     align-items: center;
+}
+
+.nav-list,
+.nav-list {
+    @include font(14px, 500, 16px);
+    letter-spacing: 0.02em;
 }
 
 .nav-list {
@@ -49,17 +44,6 @@
     border-radius: 2px;
 }
 
-
-// contacts-header
-
-.contacts-list {
-    display: flex;
-}
-
-.contacts-list__item:not(:last-child) {
-    margin-right: 50px;
-}
-
 .nav-list__item-link {
     color: var(--title-text-color);
     display: block;
@@ -75,13 +59,10 @@
 
 }
 
-
 .contacts-list .contacts-list__item-link {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
@@ -94,26 +75,85 @@
     }
 }
 
-.nav__link {
-    color: var(--title-text-color);
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
-
-
-
 .nav-list.nav__link_current {
     color: #2196F3;
 }
 
 .contacts-list__item-icon {
+    width: 16px;
+    height: 16px;
     fill: currentColor;
     margin-right: 10px;
 }
 
 
+
+
+
+
+//=========================== 0-767px
+
+@media screen and (max-width: 767px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    .contacts-list {
+        display: none;
+    }  
+
+    .page-header {
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
+     
+}
+
+
+@media screen and (min-width: 768px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+    .contacts-list .contacts-list__item-link {
+        font-size: 12px;
+        line-height: 1.16;  
+    }
+    .contacts-list__item-icon {
+        margin-right: 8px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .contacts-list__item:not(:last-child) {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .contacts-list {
+        display: flex;
+    }
+    
+    .contacts-list__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    .contacts-list .contacts-list__item-link {
+        font-size: 14px; 
+        line-height: 1.14;
+    }
+    
+
+}
+
+
+
+
+
+
+ 
+    

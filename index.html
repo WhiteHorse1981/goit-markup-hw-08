@@ -21,7 +21,7 @@
         <div class="container page-header-container">
             <nav class="main-nav">
                 <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-                <ul class="nav-list">
+                 <ul class="nav-list">
                     <li class="nav-list__item">
                         <a href="" class="nav-list__item-link nav-list__item-link_current">Студія</a>
                     </li>
@@ -33,6 +33,13 @@
                     </li>
                 </ul>
             </nav>
+
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
+
             <ul class="contacts-list">
                 <li class="contacts-list__item">
                     <a href="mailto:info@devstudio.com" class="contacts-list__item-link">
@@ -42,7 +49,7 @@
                         info@devstudio.com
                     </a>
                 </li>
-                    <li class="page-header__contacts-item">
+                    <li class="contacts-list__item">
                         <a href="tel:+380961111111" class="contacts-list__item-link">
                             <svg class="contacts-list__item-icon" width='10' height='16'>
                                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
@@ -52,15 +59,73 @@
                     </li>
             </ul>
         </div>
+        <div class="mobile-menu container" data-menu>
+            <div class="mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#close-modal"></use>
+                    </svg>
+                </button>
+                <nav class="main-nav-mobile">
+                    <ul class="nav-list-mobile">
+                        <li class="nav-list-mobile__item">
+                            <a href="" class="nav-list-mobile__item-link nav-list-mobile__item-link_current">Студія</a>
+                        </li>
+                        <li class="nav-list-mobile__item">
+                            <a href="./portfolio.html" class="nav-list-mobile__item-link">Портфоліо</a>
+                        </li>
+                        <li class="nav-list-mobile__item">
+                            <a href="" class="nav-list-mobile__item-link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts-list-mobile">
+                    <li class="contacts-list-mobile__item">
+                        <a href="tel:+380961111111" class="contacts-list-mobile__item-link">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="contacts-list-mobile__item">
+                        <a href="mailto:info@devstudio.com" class="contacts-list-mobile__item-link contacts-list-mobile__item-link_size">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mobail-social">
+                    <li class="mobail-social__item">
+                        <a href="" class="mobail-social__item-link">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="mobail-social__item">
+                        <a href="" class="mobail-social__item-link">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="mobail-social__item">
+                        <a href="" class="mobail-social__item-link">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="mobail-social__item">
+                        <a href="" class="mobail-social__item-link">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <main class="main">
-        <!--Герой-->       
+
+    <main class="main">      
+        <!--Герой--> 
         <section class="hero">
             <div class="bcg">
                 <div class="div-hero">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                     <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
-                </div>
+                </div> -->
+
                 <!-- Бекдроп -->
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
@@ -142,7 +207,6 @@
         
         <!--Рішення для бізнесу-->
         <section class="business section">
-            <!--Прихований заголовок-->
             <div class="container">
                 <h2 class="title visually-hidden">Рішення для бізнесу</h2>
                 <ul class="business-list">
@@ -193,7 +257,7 @@
                     <li class="profile-list__item">
                         <div class="profile-list__item-container">
                             <picture>
-                                <!-- DESKTOP -->
+                                
                                 <source srcset="./images/desctop/profile/profile-1@1x.jpg 1x, ./images/desctop/profile/profile-1@2x.jpg 2x" media="(min-width: 1200px)" />
                                 <img class="profile-list__item-img" src="./images/desctop/profile/profile-1.jpg" alt="Фото прикладу роботі 1" width="370">
                             </picture> 
@@ -203,7 +267,7 @@
                     <li class="profile-list__item">
                         <div class="profile-list__item-container">
                             <picture>
-                                <!-- DESKTOP -->
+                              
                                 <source srcset="./images/desctop/profile/profile-2@1x.jpg 1x, ./images/desctop/profile/profile-2@2x.jpg 2x" media="(min-width: 1200px)" />
                                 <img class="profile-list__item-img" src="./images/desctop/profile/profile-2.jpg" alt="Фото прикладу роботі 2" width="370">
                             </picture>
@@ -213,7 +277,7 @@
                     <li class="profile-list__item">
                         <div class="profile-list__item-container">
                             <picture>
-                                <!-- DESKTOP -->
+                                
                                 <source srcset="./images/desctop/profile/profile-3@1x.jpg 1x, ./images/desctop/profile/profile-3@2x.jpg 2x" media="(min-width: 1200px)" />
                                 <img class="profile-list__item-img" src="./images/desctop/profile/profile-3.jpg" alt="Фото прикладу роботі 3" width="370">
                             </picture>
@@ -232,11 +296,11 @@
                 <ul class="team-list">
                     <li class="team-list__item">
                         <picture>
-                            <!-- DESKTOP -->
+                           
                             <source srcset="./images/desctop/team/team-1@1x.jpg 1x, ./images/desctop/team/team-1@2x.jpg 2x" media="(min-width: 1200px)" />                       
-                            <!-- TABLET -->
+                            
                             <source srcset="./images/tablet/team/team-tab-1@1x.jpg 1x, ./images/tablet/team/team-tab-1@2x.jpg 2x" media="(min-width: 768px)" />                       
-                            <!-- MOBILE -->                           
+                                                     
                             <source srcset="./images/mobile/team/team-mob-1@1x.jpg 1x, ./images/mobile/team/team-mob-1@2x.jpg 2x" media="(max-width: 767px)" />
                         
                             <img class="team-list__item-img" src="./images/mobile/team/team-mob-1.jpg" alt="Співробітник 1" width="270">
@@ -279,13 +343,13 @@
                     </li>
                     <li class="team-list__item"> 
                         <picture>
-                            <!-- DESKTOP -->
+                            
                             <source srcset="./images/desctop/team/team-2@1x.jpg 1x, ./images/desctop/team/team-2@2x.jpg 2x"
                                 media="(min-width: 1200px)" />
-                            <!-- TABLET -->
+                          
                             <source srcset="./images/tablet/team/team-tab-2@1x.jpg 1x, ./images/tablet/team/team-tab-2@2x.jpg 2x"
                                 media="(min-width: 768px)" />
-                            <!-- MOBILE -->
+                            
                             <source srcset="./images/mobile/team/team-mob-2@1x.jpg 1x, ./images/mobile/team/team-mob-2@2x.jpg 2x"
                                 media="(max-width: 767px)" />
                         
@@ -328,13 +392,13 @@
                     </li>
                     <li class="team-list__item">
                         <picture>
-                            <!-- DESKTOP -->
+                            
                             <source srcset="./images/desctop/team/team-3@1x.jpg 1x, ./images/desctop/team/team-3@2x.jpg 2x"
                                 media="(min-width: 1200px)" />
-                            <!-- TABLET -->
+                            
                             <source srcset="./images/tablet/team/team-tab-3@1x.jpg 1x, ./images/tablet/team/team-tab-3@2x.jpg 2x"
                                 media="(min-width: 768px)" />
-                            <!-- MOBILE -->
+                           
                             <source srcset="./images/mobile/team/team-mob-3@1x.jpg 1x, ./images/mobile/team/team-mob-3@2x.jpg 2x"
                                 media="(max-width: 767px)" />
                         
@@ -377,13 +441,13 @@
                     </li>
                     <li class="team-list__item">
                         <picture>
-                            <!-- DESKTOP -->
+                           
                             <source srcset="./images/desctop/team/team-4@1x.jpg 1x, ./images/desctop/team/team-4@2x.jpg 2x"
                                 media="(min-width: 1200px)" />
-                            <!-- TABLET -->
+                           
                             <source srcset="./images/tablet/team/team-tab-4@1x.jpg 1x, ./images/tablet/team/team-tab-4@2x.jpg 2x"
                                 media="(min-width: 768px)" />
-                            <!-- MOBILE -->
+                            
                             <source srcset="./images/mobile/team/team-mob-4@1x.jpg 1x, ./images/mobile/team/team-mob-4@2x.jpg 2x"
                                 media="(max-width: 767px)" />
                         
@@ -545,7 +609,11 @@
             </form>
         </div>
     </footer>
+
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+
+
 </body>
 </html>

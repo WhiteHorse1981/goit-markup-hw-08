@@ -7,19 +7,19 @@
 @import "./base/section";
 @import "./base/title";
 
-@import "./components/page-header";
-@import "./components/footer";
+@import "./components/mobile-menu";
 @import "./components/logo";
 @import "./components/modal-btn-close";
 @import "./components/form-modal";
 
-
+@import "./layout/page-header";
 @import "./layout/hero";
 @import "./layout/business";
 @import "./layout/profile";
 @import "./layout/team";
 @import "./layout/regular-customers";
 @import "./layout/portfolio-projects";
+@import "./layout/footer";
 
 
 

@@ -1,37 +1,68 @@
-.business-list {
-    display: flex;
-    flex-wrap: wrap;
+.business-list__item .business-list__item-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
-    & .business-list__item {
-        width: calc((100% - 90px) / 4);
+.business-list__item .business-list__item-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
 
-        & .business-list__item-title {
-            color: var(--title-text-color);
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
+.business-list__item .business-list__item-icon {
+    padding: 25px 100px;
+    background-color: var(--additional-background);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
 
-        & .business-list__item-text {
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-        }
-        & .business-list__item-icon {
-            padding: 25px 100px;
-            background-color: var(--additional-background);
-            margin-bottom: 30px;
-            border-radius: 4px;
-        }
+@media screen and (min-width: 320px) {
+    .business-list__item .business-list__item-icon {
+        text-align: center;
     }
-    & .business-list__item:not(:last-child) {
-        margin-right: 30px;
+
+    .business-list__item .business-list__item-title {
+        text-align: center;
+    }
+
+    .business-list__item:not(:last-child) {
+        margin-bottom: 30px;
     }
 }
 
-.business {
-    padding-top: 94px;
+@media screen and (min-width: 768px) {
+    .business-list {
+        display: flex;
+        flex-wrap: wrap; 
+        column-gap: 30px;  
+    }
+
+    .business-list .business-list__item {
+        width: calc((100% - 30px) / 2);   
+    }
+
+    .business {
+        padding-top: 94px;
+    }
+
+    .business-list .business-list__item:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+    }
+   
+}
+
+@media screen and (min-width: 1200px) {  
+    .business-list .business-list__item {
+        width: calc((100% - 90px) / 4);   
+    }
+
+    .section {
+        padding-top: 47px;
+        padding-bottom: 47px;
+    }
 }
