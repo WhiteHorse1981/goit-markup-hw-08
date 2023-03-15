@@ -1,0 +1,21 @@
+function onClickIdCocktail(event) {
+  refs.gallery.innerHTML = '';
+  page = 1;
+  const letter = event.target.textContent;
+
+  console.log(Id);
+
+  fetchIdCocktails(letter).then(data => {
+    console.log(data.drinks.idDrink);
+    createCocktail(data.drinks.idDrink);
+  });
+}
+
+
+
+export async function fetchIdCocktails() {
+  const response = await fetch(`${ID_URL}`);
+  const data = await response.json();
+  console.log(data);
+  return data;
+}
